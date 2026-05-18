@@ -43,14 +43,17 @@ function FaqAccordion({ item, index }: { item: FaqItem; index: number }) {
           aria-expanded={open}
         >
           <span className="ss-faq-q">{item.q}</span>
-          <span className="ss-faq-icon" aria-hidden>
+          <span className="ss-faq-icon" aria-hidden="true">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               <path d="M6 9l6 6 6-6" />
             </svg>
           </span>
         </button>
-        <div className="ss-faq-body" aria-hidden={!open}>
-          <p className="ss-faq-a">{item.a}</p>
+        {/* grid-template-rows trick: reliable cross-browser accordion without max-height hacks */}
+        <div className="ss-faq-body">
+          <div className="ss-faq-body-inner">
+            <p className="ss-faq-a">{item.a}</p>
+          </div>
         </div>
       </div>
     </Reveal>
