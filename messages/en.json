@@ -86,6 +86,43 @@
       { "name": "Bena SA", "desc": "A strategic partner in the Saudi market for integrated tech solutions.", "url": "https://bena.sa.com" }
     ]
   },
+  "cta_banner": {
+    "eyebrow": "Ready to build?",
+    "title": "Ready to Turn Your Idea into Reality?",
+    "sub": "Join 30+ companies that trust Solven Syntrix to build their digital future.",
+    "cta_primary": "Start Your Project Today",
+    "cta_secondary": "Browse Our Work"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "What types of projects do you take on?",
+        "a": "We work on web platforms, mobile apps, cloud infrastructure, AI/ML systems, and telecoms deployments. From early-stage MVPs to large-scale production systems — if it's technical, we can build it."
+      },
+      {
+        "q": "Do you work with clients outside Syria?",
+        "a": "Yes. The majority of our clients are regional — Saudi Arabia, UAE, Jordan, and beyond. We operate remotely and adapt to any time zone or communication preference."
+      },
+      {
+        "q": "How do engagements typically start?",
+        "a": "We begin with a discovery session: stakeholder workshops, technical due diligence, and architecture scoping. You receive a clear roadmap and fixed-scope proposal before any code is written."
+      },
+      {
+        "q": "Can you bridge us with Syrian tech talent specifically?",
+        "a": "That is one of our core offerings. We can staff dedicated teams or provide technical vetting for investors deploying capital into Syria's digital economy."
+      },
+      {
+        "q": "What is your typical project timeline?",
+        "a": "MVPs typically ship in 8–12 weeks. Full-scale platforms range from 4–9 months depending on scope. We work in two-week increments with continuous delivery."
+      },
+      {
+        "q": "How do you handle post-launch support?",
+        "a": "All production deployments include observability, SRE on-call, and a 90-day hardening period. Long-term retainers are available for ongoing engineering and operations."
+      }
+    ]
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Tell us about your project",
