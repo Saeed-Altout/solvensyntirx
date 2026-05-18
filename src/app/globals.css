@@ -345,8 +345,9 @@
 .ss-cta-banner-inner { max-width: 860px; margin: 0 auto; text-align: center; position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 0; }
 .ss-cta-banner-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 700px; height: 400px; background: radial-gradient(ellipse, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 70%); filter: blur(40px); pointer-events: none; z-index: 0; }
 .ss-eyebrow-center { margin-bottom: 24px; }
-.ss-cta-banner-title { font-size: clamp(30px, 4.2vw, 56px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin: 0 0 20px; text-wrap: balance; width: 100%; }
-[dir="rtl"] .ss-cta-banner-title { letter-spacing: -0.01em; line-height: 1.2; }
+.ss-cta-banner-title { font-size: clamp(22px, 3.2vw, 44px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin: 0 0 20px; white-space: nowrap; }
+[dir="rtl"] .ss-cta-banner-title { letter-spacing: -0.01em; line-height: 1.2; white-space: normal; text-wrap: balance; }
+@media (max-width: 700px) { .ss-cta-banner-title { white-space: normal; text-wrap: balance; font-size: clamp(22px, 6vw, 32px); } }
 .ss-cta-banner-sub { font-size: clamp(15px, 1.3vw, 18px); color: var(--fg-2); line-height: 1.6; margin: 0 0 44px; max-width: 560px; }
 .ss-cta-banner-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
 .ss-btn-lg { padding: 16px 32px !important; font-size: 16px !important; }
