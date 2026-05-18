@@ -402,15 +402,28 @@
 @keyframes slideUp { from { opacity: 0; transform: translateX(-50%) translateY(16px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
 
 /* ── Legal Pages ─────────────────────────────── */
-.ss-legal-page { min-height: 100vh; padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px) 80px; position: relative; z-index: 1; }
-.ss-legal-inner { max-width: 760px; margin: 0 auto; }
-.ss-legal-back { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--fg-3); text-decoration: none; margin-bottom: 40px; transition: color .2s; }
+.ss-legal-page { min-height: 100vh; position: relative; z-index: 1; }
+.ss-legal-hero { padding: clamp(100px, 12vw, 140px) clamp(20px, 5vw, 80px) clamp(48px, 6vw, 72px); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+.ss-legal-hero::before { content: ""; position: absolute; top: -80px; inset-inline-start: -80px; width: 400px; height: 400px; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%); filter: blur(60px); pointer-events: none; }
+.ss-legal-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; }
+.ss-legal-back { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--fg-3); text-decoration: none; transition: color .2s; }
 .ss-legal-back:hover { color: var(--accent); }
-.ss-legal-title { font-size: clamp(32px, 5vw, 56px); font-weight: 700; letter-spacing: -0.03em; margin: 0 0 12px; }
-.ss-legal-date { font-size: 13px; color: var(--fg-3); margin: 0 0 56px; }
-.ss-legal-body { display: flex; flex-direction: column; gap: 40px; }
-.ss-legal-body section h2 { font-size: 18px; font-weight: 600; margin: 0 0 12px; color: var(--fg); }
-.ss-legal-body section p { font-size: 15px; line-height: 1.75; color: var(--fg-2); margin: 0; }
+.ss-legal-title { font-size: clamp(36px, 5vw, 64px); font-weight: 700; letter-spacing: -0.03em; margin: 12px 0 0; line-height: 1.1; }
+.ss-legal-layout { display: grid; grid-template-columns: 240px 1fr; gap: 48px; max-width: 1200px; margin: 0 auto; padding: clamp(40px, 5vw, 64px) clamp(20px, 5vw, 80px) 80px; align-items: start; }
+.ss-legal-toc { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 4px; }
+.ss-legal-toc-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-3); font-weight: 500; margin: 0 0 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+[dir="rtl"] .ss-legal-toc-label { letter-spacing: 0; text-transform: none; font-size: 13px; }
+.ss-legal-toc-link { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--fg-3); text-decoration: none; padding: 8px 10px; border-radius: 8px; transition: background .2s, color .2s; }
+.ss-legal-toc-link:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); color: var(--accent); }
+.ss-legal-toc-num { font-size: 11px; font-weight: 600; color: var(--accent); opacity: 0.7; min-width: 24px; }
+.ss-legal-body { display: flex; flex-direction: column; gap: 16px; }
+.ss-legal-card { display: flex; gap: 24px; background: var(--card); border: 1px solid var(--card-stroke); border-radius: 20px; padding: 32px 28px; backdrop-filter: blur(var(--glass)); transition: border-color .3s; }
+.ss-legal-card:hover { border-color: color-mix(in srgb, var(--accent) 20%, var(--card-stroke)); }
+.ss-legal-card-num { font-size: 13px; font-weight: 700; color: var(--accent); opacity: 0.5; min-width: 32px; padding-top: 3px; }
+.ss-legal-card-content { flex: 1; }
+.ss-legal-card-heading { font-size: 17px; font-weight: 600; margin: 0 0 10px; color: var(--fg); letter-spacing: -0.01em; }
+.ss-legal-card-body { font-size: 15px; line-height: 1.75; color: var(--fg-2); margin: 0; }
+@media (max-width: 860px) { .ss-legal-layout { grid-template-columns: 1fr; } .ss-legal-toc { position: static; flex-direction: row; flex-wrap: wrap; } .ss-legal-toc-link { font-size: 12px; } }
 
 /* ── Cursor FX ───────────────────────────────── */
 .ss-cursor { position: fixed; top: 0; left: 0; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--accent); transform: translate(-50%, -50%); pointer-events: none; z-index: 9999; transition: width .2s, height .2s, border-color .2s, opacity .3s; mix-blend-mode: exclusion; }
