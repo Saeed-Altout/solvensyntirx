@@ -15,6 +15,8 @@ const cairo = Cairo({
   display: "swap",
 });
 
+const BASE_URL = "https://solvensyntrix.com";
+
 export async function generateMetadata({
   params,
 }: {
@@ -22,14 +24,60 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const isAr = locale === "ar";
+  const url = `${BASE_URL}/${locale}`;
+
   return {
-    title: t("title"),
+    metadataBase: new URL(BASE_URL),
+    title: {
+      default: t("title"),
+      template: `%s | Solven Syntrix`,
+    },
     description: t("description"),
-    icons: { icon: "/logo-favicon.png" },
+    keywords: isAr
+      ? ["سولفن سنتركس", "برمجة سوريا", "تقنية معلومات", "اتصالات", "استثمار رقمي", "تطوير برمجيات"]
+      : ["Solven Syntrix", "Syria tech", "software development", "telecoms", "digital investment", "IT Syria"],
+    authors: [{ name: "Solven Syntrix", url: BASE_URL }],
+    creator: "Solven Syntrix",
+    publisher: "Solven Syntrix",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, "max-image-preview": "large" },
+    },
+    alternates: {
+      canonical: url,
+      languages: { ar: `${BASE_URL}/ar`, en: `${BASE_URL}/en` },
+    },
+    icons: {
+      icon: "/logo-favicon.png",
+      shortcut: "/logo-favicon.png",
+      apple: "/logo-favicon.png",
+    },
     openGraph: {
+      type: "website",
+      locale: isAr ? "ar_SY" : "en_US",
+      alternateLocale: isAr ? "en_US" : "ar_SY",
+      url,
+      siteName: "Solven Syntrix",
       title: t("title"),
       description: t("description"),
-      images: ["/logo.png"],
+      images: [
+        {
+          url: `${BASE_URL}/${locale}/opengraph-image`,
+          width: 1200,
+          height: 630,
+          alt: t("title"),
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@solvensyntrix",
+      creator: "@solvensyntrix",
+      title: t("title"),
+      description: t("description"),
+      images: [`${BASE_URL}/${locale}/opengraph-image`],
     },
   };
 }
