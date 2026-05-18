@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "eyebrow": "Building the digital future from Syria",
+    "title_a": "Ambitious ideas",
+    "title_b": "build great ventures.",
+    "subtitle": "We connect Syrian tech talent with regional investment — turning bold visions into sustainable digital products.",
+    "cta_primary": "Get in Touch",
+    "cta_secondary": "Explore Services"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "A team of engineers, operators, and partnership builders.",
+    "body": "We were founded on a simple idea — Syria has world-class technical talent and an underserved market. So we built a company that delivers production-grade software and telecom infrastructure for local clients, while making it easier for international partners to invest, hire, and launch from inside Syria.",
+    "stats": [
+      { "value": "7", "sup": "YR", "desc": "Continuous work through complex conditions.", "label": "Our Journey" },
+      { "value": "140", "sup": "+", "desc": "Projects delivered — from MVPs to telecom network rollouts.", "label": "Production" },
+      { "value": "18", "sup": "★", "desc": "Long-term clients across finance, retail, and the public sector.", "label": "Trust" }
+    ],
+    "meta": [
+      { "label": "HQ", "value": "Damascus, Syria" },
+      { "label": "Operating since", "value": "2019" },
+      { "label": "Engineers", "value": "32" },
+      { "label": "Languages", "value": "Arabic · English · Turkish" }
+    ]
+  },
+  "services": {
+    "eyebrow": "Capabilities",
+    "title": "Engineering across the full stack",
+    "sub": "Four practices, one delivery model. Cross-functional pods that ship from architecture to production.",
+    "web": {
+      "title": "Web Engineering",
+      "desc": "Next.js, distributed systems, design-system-driven product surfaces. Built for performance budgets that matter.",
+      "bullets": ["Next.js & SSR", "Design Systems", "Edge Computing"]
+    },
+    "mobile": {
+      "title": "Mobile Platforms",
+      "desc": "Native iOS / Android and React Native applications with offline-first architecture and CI-driven release pipelines.",
+      "bullets": ["iOS & Android", "React Native", "Offline-first"]
+    },
+    "cloud": {
+      "title": "Cloud Infrastructure",
+      "desc": "AWS, GCP and Azure landing zones, IaC, Kubernetes, observability and FinOps governance for cost-aware scale.",
+      "bullets": ["Kubernetes", "Terraform / IaC", "FinOps"]
+    },
+    "ai": {
+      "title": "AI & ML Systems",
+      "desc": "Production LLM pipelines, RAG architectures, fine-tuning, evaluation harnesses and MLOps for measurable impact.",
+      "bullets": ["LLM Pipelines", "RAG & Vector DB", "MLOps"]
+    }
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "A delivery model designed for scale",
+    "sub": "From discovery to production, every engagement runs on the same disciplined backbone.",
+    "steps": [
+      { "n": "01", "title": "Discovery & Architecture", "desc": "Stakeholder workshops, technical due diligence, system architecture and an executable roadmap." },
+      { "n": "02", "title": "Design & Prototype", "desc": "Design systems, interaction prototypes and engineering spikes to de-risk before build." },
+      { "n": "03", "title": "Build & Integrate", "desc": "Cross-functional pods shipping in two-week increments with continuous integration and review." },
+      { "n": "04", "title": "Scale & Operate", "desc": "Production hardening, observability, SRE on-call and continuous performance tuning." }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Voices",
+    "title": "What partners say",
+    "items": [
+      { "quote": "They rebuilt our core platform in nine months. Latency dropped 70%.", "name": "Layla Al-Rashid", "role": "CTO, Helix Banking" },
+      { "quote": "The most senior team we've worked with. Architecture first, no buzzwords.", "name": "Daniel Okafor", "role": "VP Engineering, Atlas Logistics" },
+      { "quote": "Their AI pipeline shipped to 120 hospitals on schedule. Zero P0 incidents.", "name": "Dr. Hana Suzuki", "role": "Chief Medical Officer, Nimbus Health" }
+    ]
+  },
+  "partners": {
+    "eyebrow": "Partners",
+    "title": "Partners we trust",
+    "items": [
+      { "name": "Bena Techs", "desc": "A tech company specializing in website and e-commerce design and development, Saudi Arabia.", "url": "https://benatechs.com" },
+      { "name": "Elite Horizon", "desc": "A leading company in web design and digital marketing, Saudi Arabia.", "url": "https://ehmena.com" },
+      { "name": "Aqualine", "desc": "A Saudi company specializing in tech solutions and digital projects.", "url": "https://aqualine.sa" },
+      { "name": "Bena SA", "desc": "A strategic partner in the Saudi market for integrated tech solutions.", "url": "https://bena.sa.com" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Tell us about your project",
+    "sub": "We respond to every qualified inquiry within one business day.",
+    "name": "Full name",
+    "name_ph": "Jane Doe",
+    "email": "Work email",
+    "email_ph": "jane@company.com",
+    "service": "Service",
+    "service_ph": "Select a service",
+    "service_options": ["Web Engineering", "Mobile Platforms", "Cloud Infrastructure", "AI & ML Systems", "Other"],
+    "message": "Project brief",
+    "message_ph": "A few sentences on what you're building…",
+    "submit": "Send inquiry",
+    "sent": "Thank you. We'll be in touch within one business day.",
+    "info_title": "Direct lines",
+    "info_email": "hello@solvensyntrix.com",
+    "info_phone": "+971 4 000 0000",
+    "info_address": "Dubai Internet City, Building 12"
+  },
+  "footer": {
+    "tagline": "Synthesizing logic, solving the future.",
+    "copyright": "© 2026 Solven Syntrix. All rights reserved.",
+    "col_company": "Company",
+    "col_services": "Services",
+    "col_legal": "Legal",
+    "links_company": ["About", "Careers", "Press", "Contact"],
+    "links_legal": ["Privacy", "Terms", "Security", "Cookies"],
+    "status": "All systems operational"
+  },
+  "meta": {
+    "title": "Solven Syntrix — Synthesizing Logic, Solving the Future",
+    "description": "We connect Syrian tech talent with regional investment — turning bold visions into sustainable digital products."
+  }
+}
