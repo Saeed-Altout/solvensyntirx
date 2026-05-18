@@ -15,7 +15,9 @@ const cairo = Cairo({
   display: "swap",
 });
 
-const BASE_URL = "https://solvensyntrix.com";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://solvensyntrix.com");
 
 export async function generateMetadata({
   params,
