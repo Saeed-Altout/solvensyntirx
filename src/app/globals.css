@@ -460,7 +460,7 @@
 .ss-hamburger { display: none; }
 @media (max-width: 880px) {
   .ss-hero-grid { grid-template-columns: 1fr; gap: 40px; }
-  .ss-hero-map-wrap { order: -1; max-width: 480px; margin: 0 auto; }
+  .ss-hero-map-wrap { order: -1; max-width: 480px; margin: 0 auto; padding-top: 24px; }
   .ss-about-columns { grid-template-columns: 1fr; }
   .ss-about-text-col { order: 1; }
   .ss-about-cards-col { order: 2; }

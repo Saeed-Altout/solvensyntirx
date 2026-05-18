@@ -113,7 +113,7 @@
     "col_services": "Services",
     "col_legal": "Legal",
     "links_company": ["About", "Careers", "Press", "Contact"],
-    "links_legal": ["Privacy", "Terms", "Security", "Cookies"],
+    "links_legal": ["Privacy", "Terms", "Security"],
     "status": "All systems operational"
   },
   "meta": {
