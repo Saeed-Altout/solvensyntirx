@@ -375,6 +375,43 @@
 .ss-footer-status { display: inline-flex; align-items: center; gap: 8px; }
 .ss-status-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 10px #22c55e; animation: pulse 1.8s ease-in-out infinite; }
 
+/* ── Page Loader ─────────────────────────────── */
+.ss-loader { position: fixed; inset: 0; z-index: 99999; background: var(--bg); display: flex; align-items: center; justify-content: center; transition: opacity .5s ease, visibility .5s ease; }
+.ss-loader-hide { opacity: 0; visibility: hidden; pointer-events: none; }
+.ss-loader-inner { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.ss-loader-logo { position: relative; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; }
+.ss-loader-ring { position: absolute; inset: 0; border-radius: 50%; border: 2px solid transparent; border-top-color: var(--accent); animation: spin 1s linear infinite; }
+.ss-loader-ring-2 { inset: 8px; border-top-color: var(--accent-3); animation-duration: 1.4s; animation-direction: reverse; opacity: 0.6; }
+.ss-loader-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 16px var(--accent); animation: pulse 1s ease-in-out infinite; }
+.ss-loader-bar { width: 160px; height: 2px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.ss-loader-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent-3)); border-radius: 2px; animation: loadbar 1.2s cubic-bezier(.4,0,.2,1) forwards; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes loadbar { 0% { width: 0%; } 60% { width: 80%; } 100% { width: 100%; } }
+
+/* ── Lang Transition ─────────────────────────── */
+.ss-lang-transition { position: fixed; inset: 0; z-index: 99998; background: var(--bg); animation: langfade .6s ease forwards; pointer-events: none; }
+@keyframes langfade { 0% { opacity: 1; } 60% { opacity: 1; } 100% { opacity: 0; } }
+
+/* ── Cookies Banner ──────────────────────────── */
+.ss-cookies { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 9000; background: var(--card); border: 1px solid var(--card-stroke); border-radius: 16px; backdrop-filter: blur(var(--glass)); padding: 16px 20px; display: flex; align-items: center; gap: 20px; box-shadow: var(--shadow-soft); max-width: 600px; width: calc(100% - 48px); animation: slideUp .4s cubic-bezier(.2,.7,.2,1); }
+.ss-cookies-text { font-size: 14px; color: var(--fg-2); margin: 0; flex: 1; line-height: 1.5; }
+.ss-cookies-link { color: var(--accent); text-decoration: none; }
+.ss-cookies-link:hover { text-decoration: underline; }
+.ss-cookies-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.ss-btn-sm { padding: 8px 16px !important; font-size: 13px !important; border-radius: 10px !important; }
+@keyframes slideUp { from { opacity: 0; transform: translateX(-50%) translateY(16px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+
+/* ── Legal Pages ─────────────────────────────── */
+.ss-legal-page { min-height: 100vh; padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px) 80px; position: relative; z-index: 1; }
+.ss-legal-inner { max-width: 760px; margin: 0 auto; }
+.ss-legal-back { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--fg-3); text-decoration: none; margin-bottom: 40px; transition: color .2s; }
+.ss-legal-back:hover { color: var(--accent); }
+.ss-legal-title { font-size: clamp(32px, 5vw, 56px); font-weight: 700; letter-spacing: -0.03em; margin: 0 0 12px; }
+.ss-legal-date { font-size: 13px; color: var(--fg-3); margin: 0 0 56px; }
+.ss-legal-body { display: flex; flex-direction: column; gap: 40px; }
+.ss-legal-body section h2 { font-size: 18px; font-weight: 600; margin: 0 0 12px; color: var(--fg); }
+.ss-legal-body section p { font-size: 15px; line-height: 1.75; color: var(--fg-2); margin: 0; }
+
 /* ── Cursor FX ───────────────────────────────── */
 .ss-cursor { position: fixed; top: 0; left: 0; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid var(--accent); transform: translate(-50%, -50%); pointer-events: none; z-index: 9999; transition: width .2s, height .2s, border-color .2s, opacity .3s; mix-blend-mode: exclusion; }
 .ss-cursor.expanded { width: 56px; height: 56px; }

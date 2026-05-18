@@ -119,5 +119,37 @@
   "meta": {
     "title": "Solven Syntrix — Synthesizing Logic, Solving the Future",
     "description": "We connect Syrian tech talent with regional investment — turning bold visions into sustainable digital products."
+  },
+  "cookies": {
+    "message": "We use cookies to improve your experience and analyze site traffic.",
+    "privacy_link": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: May 2026",
+    "back": "Back to Home",
+    "sections": [
+      { "heading": "Information We Collect", "body": "We collect information you provide directly, such as when you fill out a contact form. This may include your name, email address, and project details. We also automatically collect certain technical data including IP address, browser type, and pages visited." },
+      { "heading": "How We Use Your Information", "body": "We use the information we collect to respond to your inquiries, improve our services, analyze usage patterns, and comply with legal obligations. We do not sell your personal data to third parties." },
+      { "heading": "Cookies", "body": "We use cookies and similar tracking technologies to enhance your browsing experience and gather analytics data. You may disable cookies in your browser settings, though some site features may not function properly as a result." },
+      { "heading": "Data Retention", "body": "We retain your personal information for as long as necessary to fulfill the purposes outlined in this policy, or as required by law. Contact form submissions are retained for up to 24 months." },
+      { "heading": "Your Rights", "body": "You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at hello@solvensyntrix.com. We will respond within 30 days." },
+      { "heading": "Contact", "body": "For privacy-related questions, contact our team at hello@solvensyntrix.com or write to us at Dubai Internet City, Building 12." }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "updated": "Last updated: May 2026",
+    "back": "Back to Home",
+    "sections": [
+      { "heading": "Acceptance of Terms", "body": "By accessing or using the Solven Syntrix website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services." },
+      { "heading": "Services", "body": "Solven Syntrix provides software engineering, cloud infrastructure, mobile development, and AI/ML systems services. Service scope and deliverables are defined in individual engagement agreements." },
+      { "heading": "Intellectual Property", "body": "All content on this website including text, graphics, logos, and software is the property of Solven Syntrix and protected by applicable intellectual property laws. Client deliverables are governed by the terms of the relevant project agreement." },
+      { "heading": "Limitation of Liability", "body": "Solven Syntrix shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services. Our total liability shall not exceed the amount paid for the specific service in question." },
+      { "heading": "Governing Law", "body": "These terms shall be governed by the laws of the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of the courts of Dubai." },
+      { "heading": "Changes to Terms", "body": "We reserve the right to modify these terms at any time. Continued use of our services after changes constitutes acceptance of the updated terms. We recommend reviewing this page periodically." }
+    ]
   }
 }

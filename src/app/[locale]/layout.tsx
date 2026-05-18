@@ -3,6 +3,9 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { Cairo } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { PageLoader } from "@/components/page-loader";
+import { LangTransition } from "@/components/lang-transition";
+import { CookiesBanner } from "@/components/cookies-banner";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
@@ -46,7 +49,10 @@ export default async function LocaleLayout({
       <body className={cairo.variable}>
         <ThemeProvider>
           <NextIntlClientProvider messages={messages}>
+            <PageLoader />
+            <LangTransition />
             {children}
+            <CookiesBanner />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

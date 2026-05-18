@@ -1,13 +1,24 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
+import { useParams } from "next/navigation";
+
+const LEGAL_SLUGS: Record<string, string> = {
+  "Privacy": "privacy",
+  "Terms": "terms",
+  "الخصوصية": "privacy",
+  "الشروط": "terms",
+};
 
 export function Footer() {
   const t = useTranslations("footer");
   const st = useTranslations("services");
   const { resolvedTheme } = useTheme();
   const isDark = resolvedTheme === "dark";
+  const params = useParams();
+  const locale = params?.locale as string ?? "ar";
 
   const svcKeys = ["web", "mobile", "cloud", "ai"] as const;
 
@@ -49,11 +60,14 @@ export function Footer() {
         <div>
           <h4>{t("col_legal")}</h4>
           <ul>
-            {(t.raw("links_legal") as string[]).map((l) => (
-              <li key={l}>
-                <a href="#">{l}</a>
-              </li>
-            ))}
+            {(t.raw("links_legal") as string[]).map((l) => {
+              const slug = LEGAL_SLUGS[l];
+              return (
+                <li key={l}>
+                  {slug ? <Link href={`/${locale}/${slug}`}>{l}</Link> : <a href="#">{l}</a>}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
