@@ -241,7 +241,8 @@
   align-items: center; max-width: 1440px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px);
 }
 .ss-hero-title { font-size: clamp(40px, 6.6vw, 88px); font-weight: 600; letter-spacing: -0.04em; line-height: 1; margin: 18px 0 28px; text-wrap: balance; }
-[dir="rtl"] .ss-hero-title { letter-spacing: -0.01em; }
+[dir="rtl"] .ss-hero-title { letter-spacing: -0.01em; line-height: 1.25; }
+[dir="rtl"] .ss-hero-title .ss-title-line:first-child { padding-bottom: 0.08em; }
 .ss-title-line { display: block; }
 .ss-title-metallic {
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 90%, white) 0%, var(--accent) 35%, var(--accent-2) 70%, color-mix(in srgb, var(--accent-2) 70%, white) 100%);
