@@ -8,17 +8,17 @@
     "cta": "Get in Touch"
   },
   "hero": {
-    "eyebrow": "Building the digital future from Syria",
-    "title_a": "Ambitious ideas",
-    "title_b": "build great ventures.",
-    "subtitle": "We connect Syrian tech talent with regional investment — turning bold visions into sustainable digital products.",
-    "cta_primary": "Get in Touch",
-    "cta_secondary": "Explore Services"
+    "eyebrow": "Technology · Development · Telecoms",
+    "title_a": "Syria's Gateway",
+    "title_b": "to Digital Investment.",
+    "subtitle": "We engineer software, telecoms infrastructure, and digital products — and connect regional investors with Syria's most capable technical talent.",
+    "cta_primary": "Start a Project",
+    "cta_secondary": "Our Services"
   },
   "about": {
     "eyebrow": "About Us",
-    "title": "A team of engineers, operators, and partnership builders.",
-    "body": "We were founded on a simple idea — Syria has world-class technical talent and an underserved market. So we built a company that delivers production-grade software and telecom infrastructure for local clients, while making it easier for international partners to invest, hire, and launch from inside Syria.",
+    "title": "Specialists in IT, software, telecoms, and investment bridging.",
+    "body": "Solven Syntrix was built at the intersection of technology and opportunity. We deliver production-grade software, telecom infrastructure, and IT systems for clients across Syria and the region — and we serve as the trusted entry point for investors seeking to deploy capital in Syria's growing digital economy.",
     "stats": [
       { "value": "7", "sup": "YR", "desc": "Continuous work through complex conditions.", "label": "Our Journey" },
       { "value": "140", "sup": "+", "desc": "Projects delivered — from MVPs to telecom network rollouts.", "label": "Production" },
