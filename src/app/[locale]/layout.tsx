@@ -17,7 +17,9 @@ const cairo = Cairo({
 
 const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://solvensyntrix.com");
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://solvensyntirx.vercel.app");
 
 export async function generateMetadata({
   params,
@@ -37,8 +39,22 @@ export async function generateMetadata({
     },
     description: t("description"),
     keywords: isAr
-      ? ["سولفن سنتركس", "برمجة سوريا", "تقنية معلومات", "اتصالات", "استثمار رقمي", "تطوير برمجيات"]
-      : ["Solven Syntrix", "Syria tech", "software development", "telecoms", "digital investment", "IT Syria"],
+      ? [
+          "سولفن سنتركس",
+          "برمجة سوريا",
+          "تقنية معلومات",
+          "اتصالات",
+          "استثمار رقمي",
+          "تطوير برمجيات",
+        ]
+      : [
+          "Solven Syntrix",
+          "Syria tech",
+          "software development",
+          "telecoms",
+          "digital investment",
+          "IT Syria",
+        ],
     authors: [{ name: "Solven Syntrix", url: BASE_URL }],
     creator: "Solven Syntrix",
     publisher: "Solven Syntrix",
