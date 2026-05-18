@@ -130,6 +130,7 @@
     "title": "Privacy Policy",
     "updated": "Last updated: May 2026",
     "back": "Back to Home",
+    "contents": "Contents",
     "sections": [
       { "heading": "Information We Collect", "body": "We collect information you provide directly, such as when you fill out a contact form. This may include your name, email address, and project details. We also automatically collect certain technical data including IP address, browser type, and pages visited." },
       { "heading": "How We Use Your Information", "body": "We use the information we collect to respond to your inquiries, improve our services, analyze usage patterns, and comply with legal obligations. We do not sell your personal data to third parties." },
@@ -143,6 +144,7 @@
     "title": "Terms of Service",
     "updated": "Last updated: May 2026",
     "back": "Back to Home",
+    "contents": "Contents",
     "sections": [
       { "heading": "Acceptance of Terms", "body": "By accessing or using the Solven Syntrix website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services." },
       { "heading": "Services", "body": "Solven Syntrix provides software engineering, cloud infrastructure, mobile development, and AI/ML systems services. Service scope and deliverables are defined in individual engagement agreements." },

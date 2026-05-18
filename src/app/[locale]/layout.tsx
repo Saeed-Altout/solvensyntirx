@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { PageLoader } from "@/components/page-loader";
 import { LangTransition } from "@/components/lang-transition";
 import { CookiesBanner } from "@/components/cookies-banner";
+import { CursorFX } from "@/components/cursor-fx";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
@@ -51,6 +52,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             <PageLoader />
             <LangTransition />
+            <CursorFX />
             {children}
             <CookiesBanner />
           </NextIntlClientProvider>
